@@ -1,0 +1,17 @@
+Route::group(['prefix' => 'lpeprovinsi'], function() {
+    Route::get('/','LpeProvinsiController@getIndex');
+    Route::get('/list','LpeProvinsiController@getList');
+    Route::get('/detail/{id}','LpeProvinsiController@detailLpeProvinsi');
+    Route::get('/create','LpeProvinsiController@createLpeProvinsi');
+    Route::post('/create','LpeProvinsiController@createLpeProvinsiSave');
+    Route::get('/update/{id}','LpeProvinsiController@updateLpeProvinsi');
+    Route::post('/update/{id}','LpeProvinsiController@getIndex');
+    Route::post('/delete/{id}','LpeProvinsiController@getIndex');
+    Route::post('/activate/{id}','LpeProvinsiController@getIndex');
+    Route::post('/unactivate/{id}','LpeProvinsiController@getIndex');
+    Route::get('/getKota/{id}','LpeProvinsiController@getKota');
+    Route::get('/json/{id}/{va}','LpeProvinsiController@json');
+    Route::get('/export/{id}','LpeProvinsiController@export');
+    Route::get('/getColumns', 'LpeProvinsiController@getColumns');
+    Route::get('/getProvinsi', 'LpeProvinsiController@getProvinsi');
+});
