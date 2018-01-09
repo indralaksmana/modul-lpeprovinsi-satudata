@@ -1,0 +1,1 @@
+This is demo view file for Satudata\Lpeprovinsi package using blade template
