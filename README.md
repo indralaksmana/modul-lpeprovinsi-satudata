@@ -30,7 +30,7 @@ $ composer require indralaksmana/modul-lpeprovinsi-satudata "1.0.0"
 
 ## 2. php artisan
 ``` bash
-$ php artisan satudata:hargaberlaku
+$ php artisan satudata:lpeprovinsi
 $ php artisan vendor:publish --tag=views
 $ php artisan vendor:publish --tag=migrations
 $ php artisan vendor:publish --provider="Maatwebsite\Excel\ExcelServiceProvider"
